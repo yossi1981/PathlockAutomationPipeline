@@ -1,0 +1,9 @@
+﻿download-file http://www.ynet.co.il ynet.html
+copy-file ynet.html ynet-copy.html
+count-rows ynet-copy.html div
+create-folder . TestFolder
+query-folder .
+delete-file ynet.html
+delete-file ynet-copy.html
+wait 3
+print-time HH:MM

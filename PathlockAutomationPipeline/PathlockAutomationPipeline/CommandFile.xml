@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Commands>
+	<Command>
+		<Name>download-file</Name>
+		<Arg>http://www.ynet.co.il</Arg>
+		<Arg>ynet.html</Arg>
+	</Command>
+	<Command>
+		<Name>copy-file</Name>
+		<Arg>ynet.html</Arg>
+		<Arg>ynet-copy.html</Arg>
+	</Command>
+	<Command>
+		<Name>count-rows</Name>
+		<Arg>ynet-copy.html</Arg>
+		<Arg>div</Arg>
+	</Command>
+	<Command>
+		<Name>create-folder</Name>
+		<Arg>.</Arg>
+		<Arg>TestFolder</Arg>
+	</Command>
+	<Command>
+		<Name>query-folder</Name>
+		<Arg>.</Arg>
+	</Command>
+	<Command>
+		<Name>wait</Name>
+		<Arg>3</Arg>
+	</Command>
+	<Command>
+		<Name>delete-file</Name>
+		<Arg>ynet.html</Arg>
+	</Command>
+	<Command>
+		<Name>delete-file</Name>
+		<Arg>ynet-copy.html</Arg>
+	</Command>
+</Commands>

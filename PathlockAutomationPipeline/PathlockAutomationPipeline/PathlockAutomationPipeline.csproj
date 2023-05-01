@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EEEA068-6F38-4960-97F6-0327656F7B02}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PathlockAutomationPipeline</RootNamespace>
+    <AssemblyName>PathlockAutomationPipeline</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomationPipeline\AutomationPipeline.cs" />
+    <Compile Include="AutomationPipeline\SilentAutomationPipeline.cs" />
+    <Compile Include="AutomationPipeline\VerboseAutomationPipeline.cs" />
+    <Compile Include="CommandFileReaders\CommndFileReaderFactory.cs" />
+    <Compile Include="CommandFileReaders\XmlCommandFileReader.cs" />
+    <Compile Include="Commands\ConditionalCountRowsCommand.cs" />
+    <Compile Include="Commands\CreateFolderCommand.cs" />
+    <Compile Include="Commands\DownloadFileCommand.cs" />
+    <Compile Include="Commands\FileCopyCommand.cs" />
+    <Compile Include="Commands\FileDeleteCommand.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="CommandFileReaders\ICommandFileReader.cs" />
+    <Compile Include="CommandFileReaders\PlainTextCommandFileReader.cs" />
+    <Compile Include="Commands\PluginAdapterCommand.cs" />
+    <Compile Include="Commands\QueryFolderFilesCommand.cs" />
+    <Compile Include="Commands\WaitCommand.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Plugins\PluginsRegistry.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommandFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CommandFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginBase\PluginBase.csproj">
+      <Project>{48d0d4a8-0a7b-4f6b-a217-38979d6dfd28}</Project>
+      <Name>PluginBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
