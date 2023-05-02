@@ -40,9 +40,9 @@ or set it as a command line argument in the project settings.<br />
 To test the plugin system, build the CommandPlugins project and copy its build output (dll) to the output folder of the PathlockAutomationPipeline project.
 The dll name is defined as a setting in the App.config file.
 
-The plugin I wrote add support to the following command:
-print-time <format>
-this command prints the current time with the given format.
+The plugin I wrote add support to the following command:<br />
+print-time [format]<br />
+this command prints the current time with the given format.<br />
   
 Once you have the Dll next to the executable, you might add this command to either the XML or plain text files.
 
