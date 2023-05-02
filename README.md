@@ -2,7 +2,7 @@
 
 ## Just some general notes:
 1. I believe in simplicity, I tried to keep it is a simple as possible while still filling the requirements.<br />
-I focused on two things design patterns, and making the program work.I didn't pay much attention to how the methods are implemented or what's the best way to implement them.
+I focused on two things: Class design and design patterns, and making the program work. I didn't pay much attention to how the methods are implemented or what's the best way to implement them.
 2. I don't believe in complex inhertience trees and I am not a big fan of abstract classes. You may have expected more abstract classes, I am not sure...
 3. The xml format is not strongly typed, that is, the semantics of the arguments is infered by convension of order, rather than explicit tag names.
 4. That wasn't part of the excersie but it helped with troubleshooting so I decided to include that: I added to the app config a setting for Silent or Verbose mode. Just keep it at Silent and some classes to support that.
