@@ -7,6 +7,7 @@ I focused on two things: Class design and design patterns, and making the progra
 3. The xml format is not strongly typed, that is, the semantics of the arguments is infered by convension of order, rather than explicit tag names.
 4. That wasn't part of the excersie but it helped with troubleshooting so I decided to include that: I added to the app config a setting for Silent or Verbose mode. Just keep it at Silent.
 5. There's no support for empty command files nor input validation at all or invalid plugin dll, the program supposes that the client made no errors.
+6. You might want to manually clear the PathlockAutomationPipeline's output directory if the program terminated abnormally. In that case, there might be some garbage files that interfare with a normal execution of the next run.
 
 
 ## Solution Structure:
