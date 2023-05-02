@@ -8,6 +8,10 @@ namespace PathlockAutomationPipeline.CommandFileReaders
     {
         public static ICommandFileReader Create(string fileName)
         {
+            if (File.Exists(fileName) == false) 
+                throw new Exception(
+                    String.Format("The file '{0}' doesn't exist", fileName));
+
             FileInfo fr = new FileInfo(fileName);
             string ext = fr.Extension;
 

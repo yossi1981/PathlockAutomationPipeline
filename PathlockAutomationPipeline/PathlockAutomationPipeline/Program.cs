@@ -16,8 +16,9 @@ namespace PathlockAutomationPipeline
             {
                 //loading plugins
                 PluginsRegistry.Load(ConfigurationManager.AppSettings["pluginFileName"]);
-                
+
                 //loading commands
+                if (args.Length == 0) throw new Exception("Command file path wasn't supplied as a command line argument");
                 string commandFilePath = args[0];
                 ICommandFileReader cfr = CommndFileReaderFactory.Create(commandFilePath);          
                 List<ICommand> commands = cfr.Read(commandFilePath);
