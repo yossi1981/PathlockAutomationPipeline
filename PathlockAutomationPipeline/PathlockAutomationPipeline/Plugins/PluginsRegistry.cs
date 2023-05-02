@@ -7,8 +7,6 @@ using System.Reflection;
 
 namespace PathlockAutomationPipeline.Plugins
 {
-    //I could make that a  singleton, instead of static class. 
-    //I think that's too much of a show off, so I went with just a static class.
     internal static class PluginsRegistry
     {
         static private List<Type> _commandTypes = null;

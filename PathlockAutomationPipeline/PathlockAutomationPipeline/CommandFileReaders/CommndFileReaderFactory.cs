@@ -4,8 +4,6 @@ using System.IO;
 
 namespace PathlockAutomationPipeline.CommandFileReaders
 {
-    //I could make that a  singleton, instead of static class. 
-    //I think that's too much of a show off, so I went with just a static class.
     internal static class CommndFileReaderFactory
     {
         public static ICommandFileReader Create(string fileName)

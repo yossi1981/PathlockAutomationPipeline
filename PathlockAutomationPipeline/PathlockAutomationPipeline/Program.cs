@@ -39,7 +39,7 @@ namespace PathlockAutomationPipeline
                     "There was an error while trying to execute the automation pipeline : " +
                     e.Message);
             }
-
+            Console.WriteLine("press any key to end the program");
             Console.ReadKey();
         }
     }

@@ -35,6 +35,7 @@ namespace PathlockAutomationPipeline.CommandFileReaders
                 }
 
             }
+            commands.Add(CommandFactory.Create(commandName, args.ToArray()));
             return commands;
         }
     }

@@ -10,7 +10,7 @@ namespace CommandPlugins
     /// </summary>
     /// 
     [CommandName("print-time")]
-    public class PrintTimeCommenad : ICommandPlugin
+    public class PrintTimeCommand : ICommandPlugin
     {
         public void Execute(string[] args)
         {

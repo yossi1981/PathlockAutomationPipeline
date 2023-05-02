@@ -4,8 +4,6 @@ using PluginBase;
 
 namespace PathlockAutomationPipeline
 {
-    //I could make that a  singleton, instead of static class. 
-    //I think that's too much of a show off, so I went with just a static class.
     internal static class CommandFactory
     {
         static public ICommand Create(string _commandName, params string[] args)

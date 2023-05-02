@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace PathlockAutomationPipeline.AutomationPipeline
 {
+    /* based on the template method design pattern*/
     internal abstract class AutomationPipeline
     {
         public void Run(List<ICommand> commands) 
