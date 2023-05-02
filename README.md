@@ -20,7 +20,7 @@ I focused on two things design patterns, and making the program work.I didn't pa
 - Factory Method
 - Command
 - Template Method
-### note : There are some static classes in the project. I could make them singletons, I thought that's too much of a show off and nto really nessecary so I skipped that.
+- Note : There are some static classes in the project. I could make them singletons, I thought that's too much of a show off and nto really nessecary so I skipped that.
 
 
 ## Instructions:
