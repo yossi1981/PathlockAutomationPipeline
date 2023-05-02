@@ -31,7 +31,7 @@ CommandFile.xml<br />
 Those are coppied to the output directory upon build<br />
 You can run the program with either filenames as an argument from the CLI:<br />
 
-PathlockAutomationPipeline.exe <filename><br />
+PathlockAutomationPipeline.exe [filename]<br />
   
 or set it as a command line argument in the project settings.<br />
 
