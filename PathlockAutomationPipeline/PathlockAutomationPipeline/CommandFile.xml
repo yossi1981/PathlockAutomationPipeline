@@ -36,8 +36,4 @@
 		<Name>delete-file</Name>
 		<Arg>ynet-copy.html</Arg>
 	</Command>
-	<Command>
-		<Name>print-time</Name>
-		<Arg>HH:MM:SS</Arg>
-	</Command>
 </Commands>

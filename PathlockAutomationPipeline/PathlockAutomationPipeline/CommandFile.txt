@@ -6,4 +6,3 @@ query-folder .
 delete-file ynet.html
 delete-file ynet-copy.html
 wait 3
-print-time HH:MM:SS

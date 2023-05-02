@@ -17,7 +17,6 @@ namespace PathlockAutomationPipeline
                 //loading plugins
                 PluginsRegistry.Load(ConfigurationManager.AppSettings["pluginFileName"]);
                 
-                
                 //loading commands
                 string commandFilePath = args[0];
                 ICommandFileReader cfr = CommndFileReaderFactory.Create(commandFilePath);          
