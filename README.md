@@ -13,10 +13,10 @@ used old approaches for doing stuff. Please take that in mind.
 
 
 Solution Structure:
-- PathlockAutomationPipeline project - The main project, console application
-- PluginBase - A common library for the plugin library and the main project
-- CommandPlugins - The plugin library
-- The CommandPlugins and PathlockAutomationPipeline projects are both depdendt on the PluginBase project.
+- PathlockAutomationPipeline project - The main project, console application<br />
+- PluginBase - A common library for the plugin library and the main project<br />
+- CommandPlugins - The plugin library<br />
+- The CommandPlugins and PathlockAutomationPipeline projects are both depdendt on the PluginBase project.<br />
 
 
 Design patterns used:
@@ -27,15 +27,15 @@ note : There are some static classes in the project. I could make them singleton
 
 Instructions:
 
-In the PathlockAutomationPipeline projects, there are two textual files:
-CommandFile.txt
-CommandFile.xml
-Those are coppied to the output directory upon build
-You can run the program with either filenames as an argument from the CLI:
+In the PathlockAutomationPipeline projects, there are two textual files:<br />
+CommandFile.txt<br />
+CommandFile.xml<br />
+Those are coppied to the output directory upon build<br />
+You can run the program with either filenames as an argument from the CLI:<br />
 
-PathlockAutomationPipeline.exe <filename>
+PathlockAutomationPipeline.exe <filename><br />
   
-or set it as a command line argument in the project settings.
+or set it as a command line argument in the project settings.<br />
 
 
 
