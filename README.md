@@ -35,7 +35,7 @@ this command prints the current time with the given format.<br />
   
 Once you have the Dll next to the executable, you might add this command to either the XML or plain text files.
 
-## Some general notes:
+## Some general notes
 1. I believe in simplicity, I tried to keep it is a simple as possible while still filling the requirements.<br />
 I focused on two things: Class Design\Design patterns and making the program work. 
 2. I don't believe in complex inhertience trees and I am not a big fan of abstract classe. You don't see that in this solution because that's not my style, not because I don't know how to deal with those things.
