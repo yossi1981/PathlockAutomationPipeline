@@ -6,7 +6,7 @@
 - CommandPlugins - The plugin library<br />
 - The CommandPlugins and PathlockAutomationPipeline projects are both depdendt on the PluginBase project.<br />
 
-## Design patterns used:
+## Design patterns used
 - Factory Method
 - Command
 - Template Method
