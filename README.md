@@ -1,21 +1,10 @@
 # PathlockAutomationPipeline
 
-## Just some general notes:
-1. I believe in simplicity, I tried to keep it is a simple as possible while still filling the requirements.<br />
-I focused on two things: Class design and design patterns, and making the program work. I didn't pay much attention to how the methods are implemented or what's the best way to implement them.
-2. I don't believe in complex inhertience trees and I am not a big fan of abstract classes. You may have expected more abstract classes, I am not sure...
-3. The xml format is not strongly typed, that is, the semantics of the arguments is infered by convension of order, rather than explicit tag names.
-4. That wasn't part of the excersie but it helped with troubleshooting so I decided to include that: I added to the app config a setting for Silent or Verbose mode. Just keep it at Silent.
-5. There's no support for empty command files nor input validation at all or invalid plugin dll, the program supposes that the client made no errors.
-6. You might want to manually clear the PathlockAutomationPipeline's output directory if the program terminated abnormally. In that case, there might be some garbage files that interfare with a normal execution of the next run.
-
-
-## Solution Structure:
+## Solution Structure
 - PathlockAutomationPipeline project - The main project, console application<br />
 - PluginBase - A common library for the plugin library and the main project<br />
 - CommandPlugins - The plugin library<br />
 - The CommandPlugins and PathlockAutomationPipeline projects are both depdendt on the PluginBase project.<br />
-
 
 ## Design patterns used:
 - Factory Method
@@ -23,8 +12,7 @@ I focused on two things: Class design and design patterns, and making the progra
 - Template Method
 - Note : There are some static classes in the project. I could make them singletons, I thought that's too much of a show off and nto really nessecary so I skipped that.
 
-
-## Instructions:
+## Instructions
 
 In the PathlockAutomationPipeline projects, there are two textual files:<br />
 CommandFile.txt<br />
@@ -46,4 +34,12 @@ print-time [format]<br />
 this command prints the current time with the given format.<br />
   
 Once you have the Dll next to the executable, you might add this command to either the XML or plain text files.
+
+## Some general notes:
+1. I believe in simplicity, I tried to keep it is a simple as possible while still filling the requirements.<br />
+I focused on two things: Class Design\Design patterns and making the program work. I didn't pay much attention to how the methods are implemented or what's the best way to implement them.
+2. I don't believe in complex inhertience trees and I am not a big fan of abstract classes, thus, thus I didn't practice that in this solution.
+3. The xml format is not strongly typed, that is, the semantics of the arguments is infered by convension (that is, the sequential order of the arguments), rather than explicit tag names.
+4. There's no support for empty command files nor input validation at all or invalid plugin dll, the program supposes that the client made no errors.
+5. You might want to manually clear the PathlockAutomationPipeline's output directory if the program terminated abnormally. In that case, there might be some garbage files that interfare with a normal execution of the next run.
 
