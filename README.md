@@ -37,8 +37,8 @@ Once you have the Dll next to the executable, you might add this command to eith
 
 ## Some general notes:
 1. I believe in simplicity, I tried to keep it is a simple as possible while still filling the requirements.<br />
-I focused on two things: Class Design\Design patterns and making the program work. You don't see that in this solution because that's not my style.
-2. I don't believe in complex inhertience trees and I am not a big fan of abstract classes, thus, thus I didn't practice that in this solution.
+I focused on two things: Class Design\Design patterns and making the program work. You don't see that in this solution because that's not my style, not because I don't know how to deal with those things.
+2. I don't believe in complex inhertience trees and I am not a big fan of abstract classes, thus I didn't practice that in this solution.
 3. The xml format is not strongly typed, that is, the semantics of the arguments is infered by convension (that is, the sequential order of the arguments), rather than explicit tag names.
 4. There's no support for empty command files nor input validation at all or invalid plugin dll, the program supposes that the client made no errors.
 5. You might want to manually clear the PathlockAutomationPipeline's output directory if the program terminated abnormally. In that case, there might be some garbage files that interfare with a normal execution of the next run.
