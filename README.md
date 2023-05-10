@@ -8,7 +8,7 @@
 
 ## Design patterns used
 - Factory Method
-- Command (ICommand and all its implementation)
+- Command (ICommand and all of its implementations)
 - Template Method (Look at the AutomationPipleline abstract class and its child classes)
 - Strategy (The command file readers follow the strategy pattern)
 - Adapter (Where I connect a Command with a Plugin Command)
