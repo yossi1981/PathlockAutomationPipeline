@@ -16,11 +16,11 @@
 
 ## Instructions
 
-In the PathlockAutomationPipeline projects, there are two textual files:<br />
+In the PathlockAutomationPipeline project, there are two textual files:<br />
 CommandFile.txt<br />
 CommandFile.xml<br />
 Those are coppied to the output directory upon build<br />
-You can run the program with either filenames as an argument from the CLI:<br />
+You can run the program with either file names as an argument from the CLI:<br />
 
 PathlockAutomationPipeline.exe [filename]<br />
   
